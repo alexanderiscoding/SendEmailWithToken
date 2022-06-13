@@ -1,0 +1,6 @@
+fastapi
+mailjet_rest
+sendgrid
+pydantic
+starlette
+uvicorn
