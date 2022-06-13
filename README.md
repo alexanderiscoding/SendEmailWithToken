@@ -1,6 +1,6 @@
 ## 🚀 Usage
 
-Iniciar servidor Python Localmente
+Initialize server local
 
 ```
 uvicorn api.main:app --reload
