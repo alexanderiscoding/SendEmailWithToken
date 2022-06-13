@@ -19,7 +19,10 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import *
 sendgrid_client = SendGridAPIClient('your api')
 
-token_access = '5pCGf_bnBHVqJiiUCfq-Ip_jcJczWjrkBBZf1z-StvA'
+# for token 32 caracters https://generate-secret.vercel.app/32
+# for token 64 caracters https://generate-secret.vercel.app/64
+# please change this token by an example above
+token_access = 'a8919de3b6f0f44a8799c8854deb3e43'
 
 app = FastAPI()
 
@@ -42,6 +45,7 @@ class SendMailJet_Info(BaseModel):
     to_name: str
     subject_email: str
     content_email: str
+    token: str
 
 @app.post("/mailjet")
 async def index(item: SendMailJet_Info):
