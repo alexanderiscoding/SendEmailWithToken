@@ -19,8 +19,8 @@ fetch("https://examplename.vercel.app/mailjet", {
     to_name: "Alexanderiscoding",
     subject_email: "Saudações da Mailjet.",
     content_email:  "<strong>Bem-vindo(a) à <a href='https://www.mailjet.com/'>Mailjet</a>!</strong>",
-    token: "a8919de3b6f0f44a8799c8854deb3e43",
-  }),
+    token: "a8919de3b6f0f44a8799c8854deb3e43"
+  })
 });
 ```
 Send emails from service sendgrid with token
@@ -34,7 +34,7 @@ fetch("https://examplename.vercel.app/sendgrid", {
     to_name: "Alexanderiscoding",
     subject_email: "Saudações da Mailjet.",
     content_email:  "<strong>and easy to do anywhere, even with Python</strong>",
-    token: "a8919de3b6f0f44a8799c8854deb3e43",
-  }),
+    token: "a8919de3b6f0f44a8799c8854deb3e43"
+  })
 });
 ```
