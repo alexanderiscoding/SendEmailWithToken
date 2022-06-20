@@ -7,6 +7,8 @@ uvicorn api.main:app --reload
 ```
 
 Change after **token** for same token from /api/main.py
+
+Send emails from service mailjet with token
 ```js
 fetch("https://examplename.vercel.app/mailjet", {
   method: "POST",
@@ -21,6 +23,7 @@ fetch("https://examplename.vercel.app/mailjet", {
   }),
 });
 ```
+Send emails from service sendgrid with token
 ```js
 fetch("https://examplename.vercel.app/sendgrid", {
   method: "POST",
